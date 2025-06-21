@@ -16,12 +16,12 @@ date_format = '%Y-%m-%d'
 
 # load data
 file = 'macro_indicators_250617.csv'
-path = 'data'
+path = 'assets'
 df_macro = pd.read_csv(f'{path}/{file}', parse_dates=[0], index_col=0).rename_axis('date')
 
 # category & dropdown options
 file = 'macro_indicator_category_250617.csv'
-path = 'data'
+path = 'assets'
 df = pd.read_csv(f'{path}/{file}', index_col=0)
 data_category = df['category'].to_dict()
 indicator_desc = df['title'].to_dict()
@@ -233,7 +233,7 @@ app.clientside_callback(
 
     }
     """,
-    Output('macro-data', 'data'),
+    Output('macro-data', 'assets'),
     Output('indicator-dropdown', 'value'),
     Output('start-input', 'value'),
     Output('end-input', 'value'),
@@ -337,7 +337,7 @@ app.clientside_callback(
     Output('macro-plot', 'figure'),
     Input('start-input', 'value'),
     Input('end-input', 'value'),
-    Input('macro-data', 'data'),
+    Input('macro-data', 'assets'),
     Input('rebase-boolean-switch', 'on'),
 )
 
