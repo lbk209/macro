@@ -1,0 +1,21 @@
+indicator,category,title
+DAX30,market,German Stock Index
+DXY,exchange,U.S. Dollar Index
+ECBMRO,benchmark,ECB Interest Rates
+FEDFUNDS,benchmark,Federal Funds Effective Rate
+FTSE100,market,FTSE 100 Index
+GOLD,commodity,Gold Futures
+HSI,market,Hang Seng Index
+KOSPI,market,KOSPI
+KR10Y,yield,Korea Government Bonds 10 YR Yield
+N225,market,Nikkei 225
+S&P500,market,Standard and Poor's 500
+SSEC,market,Shanghai Stock Exchange
+STOXX50,market,EURO STOXX 50
+US10YT,yield,10-Year U.S. Treasury Bond Yield
+USD/CNY,exchange,1 USD to CNY
+USD/EUR,exchange,1 USD to EUR
+USD/JPY,exchange,1 USD to JPY
+USD/KRW,exchange,1 USD to KRW
+USREC,benchmark,Recession Indicators for the United States
+WTI,commodity,West Texas Intermediate
