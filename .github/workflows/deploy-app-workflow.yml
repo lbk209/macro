@@ -5,7 +5,7 @@ on:
     branches:
       - 'main'
     paths:
-      - 'pf_macro.py'
+      - 'app.py'
       - '*.csv'
       - 'requirements.txt'
       - 'assets/**'
