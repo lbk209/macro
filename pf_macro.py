@@ -17,12 +17,14 @@ date_format = '%Y-%m-%d'
 # load data
 file = 'macro_indicators_250617.csv'
 path = 'assets'
-df_macro = pd.read_csv(f'{path}/{file}', parse_dates=[0], index_col=0).rename_axis('date')
+#df_macro = pd.read_csv(f'{path}/{file}', parse_dates=[0], index_col=0).rename_axis('date')
+df_macro = pd.read_csv(file, parse_dates=[0], index_col=0).rename_axis('date')
 
 # category & dropdown options
 file = 'macro_indicator_category_250617.csv'
 path = 'assets'
-df = pd.read_csv(f'{path}/{file}', index_col=0)
+#df = pd.read_csv(f'{path}/{file}', index_col=0)
+df = pd.read_csv(file, index_col=0)
 data_category = df['category'].to_dict()
 indicator_desc = df['title'].to_dict()
 
